@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HappyKet.Net - Beranda</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding-top: 56px;
+        }
+        .container {
+            color: #191919;
+            font-style: italic;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .hero-section {
+            background: url('path/to/your-hero-image.jpg') no-repeat center center;
+            background-size: cover;
+            color: #fff;
+            padding: 60px 0;
+        }
+
+        .hero-section h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .feature-icon {
+            font-size: 2rem;
+            color: #0056b3;
+        }
+
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .destination-card {
+            margin-bottom: 30px;
+        }
+
+        footer {
+            background-color: #191919;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">HappyKet.Net</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="beranda.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="pesan.html">Pesan tiket</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tampil.php">Lihat Pesanan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kontak.html">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section text-center text-white">
+        <div class="container">
+            <h1>Selamat Datang di HappyKet.Net!😊</h1>
+            <p>Kami adalah mitra terpercaya Anda untuk menjelajahi keindahan destinasi wisata terbaik di seluruh Indonesia. Dari pantai tropis Bali hingga keajaiban budaya Yogyakarta, temukan berbagai pilihan paket wisata yang dirancang khusus untuk pengalaman tak terlupakan.</p>
+            <a href="pesan.html" class="btn btn-primary btn-lg">Pesan Tiket Sekarang</a>
+        </div>
+    </header>
+
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Destinasi Wisata Terpopuler</h2>
+        <div class="row">
+            <!-- Destinasi 1 -->
+            <div class="col-md-4 destination-card">
+                <div class="card">
+                    <img src="image/bali.jpg" class="card-img-top" alt="Destination 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Bali</h5>
+                        <p class="card-text">pulau paradise dengan pantai-pantai menawan, pemandangan sawah terasering yang hijau, dan budaya yang kaya membuat liburan jadi lebih menyenangkan</p>
+                        <a href="pesan.html" class="btn btn-primary">Pesan Tiket</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Destinasi 2 -->
+            <div class="col-md-4 destination-card">
+                <div class="card">
+                    <img src="image/jogja.jpeg" class="card-img-top" alt="Destination 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Yogyakarta</h5>
+                        <p class="card-text">kota kultur dan sejarah yang mempesona, dengan candi-candi megah seperti Borobudur dan Prambanan serta kerajinan tradisional yang memikat.</p>
+                        <a href="pesan.html" class="btn btn-primary">Pesan Tiket</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Destinasi 3 -->
+            <div class="col-md-4 destination-card">
+                <div class="card">
+                    <img src="image/jakarta.jpeg" class="card-img-top" alt="Destination 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Jakarta</h5>
+                        <p class="card-text">Nikmati keanekaragaman kota besar ini dan rasakan hidup metropolitan yang tak terlupakan,  dengan tempat belanja yang trendi, dan kuliner yang lezat</p>
+                        <a href="pesan.html" class="btn btn-primary">Pesan Tiket</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 destination-card">
+                <div class="card">
+                    <img src="image/Papua.jpg" class="card-img-top" alt="Destination 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Papua</h5>
+                        <p class="card-text">Papua adalah permata tersembunyi di timur Indonesia, menawarkan keindahan alam yang menakjubkan dan kekayaan budaya yang kaya.</p>
+                        <a href="pesan.html" class="btn btn-primary">Pesan Tiket</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 destination-card">
+                <div class="card">
+                    <img src="image/Medan.jpeg" class="card-img-top" alt="Destination 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Medan</h5>
+                        <p class="card-text">kota yang penuh dengan warisan budaya dan kuliner khas seperti bubur ayam dan sate, serta nikmati keindahan alam di sekitar danau dan pegunungan.</p>
+                        <a href="pesan.html" class="btn btn-primary">Pesan Tiket</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 destination-card">
+                <div class="card">
+                    <img src="image/Kupang.jpeg" class="card-img-top" alt="Destination 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Kupang</h5>
+                        <p class="card-text">Temukan Kupang, kota pesisir dengan pemandangan laut yang menakjubkan dan budaya lokal yang unik serta nikmati kuliner laut yang lezat.</p>
+                        <a href="pesan.html" class="btn btn-primary">Pesan Tiket</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 destination-card">
+                <div class="card">
+                    <img src="image/Makasar.jpg" class="card-img-top" alt="Destination 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Makasar</h5>
+                        <p class="card-text">Jelajahi Makassar, kota yang dinamis dengan keindahan pantai dan budaya yang kaya, serta nikmati kuliner khasnya yang menggugah selera.</p>
+                        <a href="pesan.html" class="btn btn-primary">Pesan Tiket</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 destination-card">
+                <div class="card">
+                    <img src="image/Sumba.jpeg" class="card-img-top" alt="Destination 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Sumba</h5>
+                        <p class="card-text">Jelajahi keindahan Sumba, yang menawarkan pantai-pantai eksotis, desa tradisional yang kaya budaya, dan pemandangan alam yang memukau.</p>
+                        <a href="pesan.html" class="btn btn-primary">Pesan Tiket</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 destination-card">
+                <div class="card">
+                    <img src="image/Bandung.jpg" class="card-img-top" alt="Destination 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Bandung</h5>
+                        <p class="card-text">Temukan keindahan Bandung dengan pemandangan pegunungan yang menakjubkan, kebun teh yang luas, dan kuliner lezat yang menggugah selera.</p>
+                        <a href="pesan.html" class="btn btn-primary">Pesan Tiket</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 destination-card">
+                <div class="card">
+                    <img src="image/Denpasar.jpeg" class="card-img-top" alt="Destination 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Denpasar</h5>
+                        <p class="card-text"> Temukan pura-pura bersejarah, pasar tradisional yang meriah, dan kuliner khas Bali yang lezat. Rasakan suasana dinamis dan memikat dari kota ini.</p>
+                        <a href="pesan.html" class="btn btn-primary">Pesan Tiket</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 destination-card">
+                <div class="card">
+                    <img src="image/lampung.jpeg" class="card-img-top" alt="Destination 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Lampung</h5>
+                        <p class="card-text">Nikmati pemandangan alam yang masih asri dan kuliner lezat khas Lampung. Rasakan keindahan dan keramahan lokal yang memikat.</p>
+                        <a href="pesan.html" class="btn btn-primary">Pesan Tiket</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 destination-card">
+                <div class="card">
+                    <img src="image/sulawesi.jpeg" class="card-img-top" alt="Destination 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Sulawesi</h5>
+                        <p class="card-text">pulau yang kaya akan keindahan alam dengan pegunungan hijau, pantai-pantai menawan, dan keberagaman budaya yang unik.</p>
+                        <a href="pesan.html" class="btn btn-primary">Pesan Tiket</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 HappyKet.Net. All rights reserved.</p>
+        <p>Follow us on:
+            <a href="#" class="text-white">Facebook</a> |
+            <a href="#" class="text-white">Twitter</a> |
+            <a href="#" class="text-white">Instagram</a>
+        </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
