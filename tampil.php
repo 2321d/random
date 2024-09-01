@@ -1,27 +1,18 @@
 <?php
-// Konfigurasi database
 $servername = "localhost";
-$username = "root"; // Ganti dengan username database Anda
-$password = "";     // Ganti dengan password database Anda
-$dbname = "db_tiket"; // Ganti dengan nama database Anda
-
-// Buat koneksi
+$username = "root"; 
+$password = "";     
+$dbname = "db_tiket";
 $conn = new mysqli($servername, $username, $password, $dbname);
-
-// Periksa koneksi
 if ($conn->connect_error) {
     die("Koneksi gagal: " . $conn->connect_error);
 }
-
-// Query untuk mengambil data
 $sql = "SELECT * FROM tiket";
 $result = $conn->query($sql);
-
 if (!$result) {
     die("Query gagal: " . $conn->error);
 }
 ?>
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -31,9 +22,15 @@ if (!$result) {
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            background-color: white;
+            background: linear-gradient(to right, rgb(164, 161, 161), white)
         }
         form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .content {
             background: #fff;
             padding: 20px;
             border-radius: 8px;
@@ -50,7 +47,7 @@ if (!$result) {
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-          <a class="navbar-brand" href="#">HappyKet.Net</a>
+          <a class="navbar-brand" href="beranda.html">HappyKet.Net</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
               aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -76,9 +73,10 @@ if (!$result) {
 <br>
 <br>
 <br>
-<div class="container mt-5">
+<div class="container mt-5 pt-5" >
+    <div class="content">
     <h1 class="mb-4">Data Pemesanan Tiket Liburan</h1>
-    <table class="table table-striped">
+    <table class="table table-striped table-responsive">
         <thead>
             <tr>
                 <th>Nama Lengkap</th>
@@ -120,6 +118,7 @@ if (!$result) {
     <div class="text-end mt-4">
         <a class="btn btn-dark" href="pesan.html">Pesan Tiket Lagi</a>
     </div>
+    </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <br><br><br><br><br><br><br><br><br><br><br>
@@ -134,6 +133,5 @@ if (!$result) {
 </body>
 </html>
 <?php
-// Tutup koneksi
 $conn->close();
 ?>
