@@ -7,6 +7,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     
     <style>
+  body{
+    background: linear-gradient(to right, rgb(164, 161, 161), white)
+  }
   h1 {
     text-align: center;
     margin-top: 20px;
@@ -50,7 +53,12 @@
   button:hover {
     background-color: #0056b3;
   }
-
+  .content {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
   .form-group {
     margin-bottom: 15px;
   }
@@ -70,7 +78,7 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-          <a class="navbar-brand" href="#">HappyKet.Net</a>
+          <a class="navbar-brand" href="beranda.html">HappyKet.Net</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
               aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -95,27 +103,41 @@
   </nav>
   <br>
   <br>
-  <br>
-        <h1 class="tag">Silahkan isi form pemesanan di bawah ini👇🏻</h1>
+  <div class="container mt-5">
+    <div class="content">
+        <h1>Silahkan isi form pemesanan di bawah ini👇🏻</h1>
         <br>
         <form action="pesan.php" method="post">
+
+          <div class="mb-3">
             <label for="nama">Nama Lengkap:</label>
             <input type="text" id="nama" name="nama" required><br><br>
-    
+            </div>
+
+            <div class="mb-3">
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required><br><br>
-    
+            </div> 
+
+            <div class="mb-3">
             <label for="tanggal">Tanggal Liburan:</label>
             <input type="date" id="tanggal" name="tanggal" required><br><br>
-    
+            </div>
+              
+            <div class="mb-3">
             <label for="jumlah">Jumlah Peserta:</label>
             <input type="number" id="jumlah_peserta" name="jumlah_peserta" min="1" required><br><br>
+            </div>
 
+            <div class="mb-3">
             <label for="jumlah_hari">Jumlah Hari Perjalanan:</label>
             <input type="number" id="jumlah_hari" name="jumlah_hari" min="1" required><br><br>
-    
+            </div>
+            
+            <div class="mb-3">
             <label for="tujuan">Tujuan Liburan:</label>
             <select id="tujuan" name="tujuan" required>
+                <option value="">--pilih Tujuan--</option>
                 <option value="bali">Bali</option>
                 <option value="yogyakarta">Yogyakarta</option>
                 <option value="jakarta">Jakarta</option>
@@ -128,21 +150,24 @@
                 <option value="Medan">Medan</option>
                 <option value="Makasar">Makasar</option>
                 <option value="Bandung">Bandung</option>
-                <!-- Tambahkan opsi lainnya sesuai kebutuhan -->
             </select>
+          </div>
+
             <label for="paket_perjalanan">Paket Pelayanan:</label>
-            <div id="paket_perjalanan">
+            <div class="mb-3" id="paket_perjalanan">
                 <input type="radio" id="paket1" name="paket_perjalanan" value="standar" data-harga="200000">
-                <label for="paket1">Paket Standar - Rp 300.000 - (Transportasi, Makanan, Asuransi)</label><br>
+                <label for="paket1">Paket Standar - Rp 50.000 - (Transportasi, Makanan, Asuransi)</label><br>
                 <input type="radio" id="paket2" name="paket_perjalanan" value="premium" data-harga="400000">
-                <label for="paket2">Paket Premium - Rp 400.000 - (Transportasi, Makanan, Asuransi, Pemandu Kegiatan)</label><br>
+                <label for="paket2">Paket Premium - Rp 100.000 - (Transportasi, Makanan, Asuransi, Pemandu Kegiatan)</label><br>
                 <input type="radio" id="paket3" name="paket_perjalanan" value="VIP" data-harga="600000">
-                <label for="paket3">Paket VIP - Rp 500.000 - (Transportasi, Akomodasi, Makanan, Asuransi, Pemandu Kegiatan, Layanan Pribadi)</label>
+                <label for="paket3">Paket VIP - Rp 150.000 - (Transportasi, Akomodasi, Makanan, Asuransi, Pemandu Kegiatan, Layanan Pribadi)</label>
             </div><br><br>
     
             <button href="tampil.php">Pesan Tiket</button>
         </form>
-
+      </div>
+    </div>
+      <br>
         <footer>
           <p>&copy; 2024 HappyKet.Net. All rights reserved.</p>
           <p>Follow us on:
